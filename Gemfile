@@ -27,6 +27,7 @@ gem 'turbolinks', '~> 5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -51,14 +52,18 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'bcrypt', '3.1.11'
+  gem 'factory_bot_rails'
+  gem 'rspec-rails', '~> 4.0.0'
+
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
+  gem 'capybara'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
+  gem 'selenium-webdriver'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

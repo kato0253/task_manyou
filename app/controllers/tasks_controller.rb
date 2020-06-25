@@ -13,6 +13,7 @@ class TasksController < ApplicationController
   # GET /tasks/new
   def new
     @task = Task.new
+    # @user = current_user.id
   end
 
   # GET /tasks/1/edit
